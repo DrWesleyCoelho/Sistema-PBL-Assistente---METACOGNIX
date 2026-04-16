@@ -1,0 +1,123 @@
+{
+    "project_name": "PBL Assistent",
+    "vision": "Sistema educacional médico baseado em PBL com IA, evidência científica e metacognição",
+    "architecture": {
+        "core_engine": "Execução do método PBL",
+        "knowledge_engine": "Integração com evidência científica",
+        "user_engine": "Perfil cognitivo e adaptação",
+        "document_engine": "Geração de relatórios ABNT",
+        "evaluation_engine": "Sistema de score",
+        "metacognix": "Tutor inteligente"
+    },
+    "pbl_flow": [
+        "leitura_do_problema",
+        "termos_desconhecidos",
+        "hipoteses",
+        "estruturacao",
+        "objetivos_aprendizado",
+        "estudo_individual",
+        "rediscussao"
+    ],
+    "evidence_sources": [
+        "OMS",
+        "Ministério da Saúde",
+        "Diretrizes brasileiras",
+        "PubMed",
+        "NEJM",
+        "Lancet"
+    ],
+    "user_profile": {
+        "nivel": [
+            "junior",
+            "clinico",
+            "autonomo"
+        ],
+        "estilo_aprendizado": [
+            "visual",
+            "analitico",
+            "hibrido"
+        ],
+        "score_pbl_range": "0-100"
+    },
+    "subprojects": {
+        "1": {
+            "name": "PBL Assistent Júnior - 1º ano",
+            "rules": {
+                "bloqueio_objetivos": true,
+                "mensagem": "Geração automática de objetivos bloqueada para estimular raciocínio"
+            },
+            "avaliacao_final": {
+                "questoes": 10,
+                "tipos": [
+                    "abertas",
+                    "fechadas"
+                ]
+            }
+        },
+        "2": {
+            "name": "PBL Assistent Júnior - 2º ano",
+            "complexidade": "intermediaria"
+        },
+        "3": {
+            "name": "PBL Assistent Clínico - 3º ano",
+            "foco": "raciocinio clinico"
+        },
+        "4": {
+            "name": "PBL Assistent Clínico Autônomo - 4º ano",
+            "funcao": "transformar objetivos em plano de estudo"
+        },
+        "5": {
+            "name": "Metacognix PBL - Raciocínio Clínico e Conduta"
+        },
+        "6": {
+            "name": "Metacognix PBL - Médico Padrão-Ouro"
+        }
+    },
+    "document_engine": {
+        "outputs": [
+            "relatorio_PIESC",
+            "caso_clinico",
+            "resumo"
+        ],
+        "formatos": [
+            "DOCX",
+            "PDF"
+        ],
+        "normas": [
+            "ABNT"
+        ]
+    },
+    "score_system": {
+        "penalidades": {
+            "uso_precoce_IA": -10,
+            "baixa_analise": -5
+        },
+        "bonus": {
+            "pensamento_critico": 10
+        }
+    },
+    "gamification": {
+        "xp": true,
+        "niveis": [
+            "estudante",
+            "clinico",
+            "expert"
+        ]
+    },
+    "tech_stack": {
+        "frontend": "Flutter",
+        "backend": [
+            "Python FastAPI",
+            "Node.js"
+        ],
+        "IA": [
+            "OpenAI",
+            "Gemini",
+            "DeepSeek"
+        ],
+        "integracoes": [
+            "Google Docs API",
+            "Firebase"
+        ]
+    }
+}
